@@ -165,8 +165,8 @@ local function execute(code, stdin, env, palette, call)
         if palette and gpu then
             sleep(.3)
             fill(1, 1, width or 0, height or 0, 0)
-            gpu.setPaletteColor(9, 0x969696)
-            gpu.setPaletteColor(11, 0xb4b4b4)
+            gpu.setPaletteColor(9, ff9900)
+            gpu.setPaletteColor(11, 007bff)
         end
 
         return call(chunk, debug.traceback)
